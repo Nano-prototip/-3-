@@ -7,7 +7,7 @@
 - На проверку направить скриншот с командой и результатом ее выполнения
 
 ### Решение 
-![Alt text](https://github.com/Rinat43/rsync/blob/main/rsync.png)
+![image](https://github.com/user-attachments/assets/f68cc66d-6b6c-484a-91f4-22890fdaf0e3)
 
 ### Задание 2
 - Написать скрипт и настроить задачу на регулярное резервное копирование домашней директории пользователя с помощью rsync и cron.
