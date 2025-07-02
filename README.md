@@ -21,11 +21,12 @@
 0 1 * * * /usr/local/bin/backup-dir.sh /home/ /tmp/backup/ # резервное копирование существующей папки
 0 1 * * * /usr/local/bin/backup-dir.sh /home/ /tmp/backup/ № резервное копирование несуществующей папки
 ```
+```
 #!/bin/bash
 
-DEST_DIR=$1    # резервируемая папка
-BACKUP_DIR=$2  # папка для хранения бэкапа
-LOG_FILE=/var/log/syslog # путь  до лог-фвйла
+DEST_DIR=$1    
+BACKUP_DIR=$2  
+LOG_FILE=/var/log/syslog 
 
 rsync -a --delete "$DEST_DIR" "$BACKUP_DIR" > /dev/null 2>&1
 
