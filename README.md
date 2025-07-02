@@ -18,11 +18,6 @@
 
 ### Решение 
 ```
-#!/bin/sh
-rsync -av --delete /home/rinat/ /tmp/backup >> /var/log/cron.log
+0 1 * * * /usr/local/bin/backup-dir.sh /home/ /tmp/backup/ # резервное копирование существующей папки
+0 1 * * * /usr/local/bin/backup-dir.sh /home/ /tmp/backup/ № резервное копирование несуществующей папки
 ```
-- Скрин crontab
-  
-![Alt text](https://github.com/Rinat43/rsync/blob/main/crontab.png)
-- Скрин логов
-
